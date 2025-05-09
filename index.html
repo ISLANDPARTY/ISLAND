@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -9,8 +8,8 @@
     :root {
       --color-primario: #ff9500;
       --color-secundario: #00c2cb;
-      --color-fondo: #fff8f0;
-      --color-texto: #1a1a1a;
+      --color-fondo: #111111;
+      --color-texto: #ffffff;
     }
     body {
       margin: 0;
@@ -63,7 +62,8 @@
       max-width: 300px;
       width: 100%;
     }
-    .flyer-anterior img {
+    .flyer-anterior img,
+    .anuncio-lugar img {
       max-width: 100%;
       display: block;
       margin: 2rem auto;
@@ -108,15 +108,24 @@
     <h1>ISLAND PARTY VOL.2</h1>
     <p>Coliseo del Pueblo, Tumaco, Nariño - 28 de junio - 9:00 PM</p>
   </header>
+
   <div class="logo-evento">
     <img src="img/logo-island.png" alt="Logo Island Party">
   </div>
+
+  <section class="anuncio-lugar">
+    <h2>Anuncio del lugar</h2>
+    <img src="img/fondo-header.jpg" alt="Anuncio del lugar">
+  </section>
+
   <section>
     <div class="countdown" id="countdown"></div>
     <a href="https://wa.me/573187235419" target="_blank" class="reserva-btn">¡Reserva Ahora por WhatsApp!</a>
+
     <h2>Sobre el evento</h2>
     <p>ISLAND PARTY es una celebración semestral de música, cultura y juventud en Tumaco. Su primera edición fue en diciembre de 2024 con una asistencia que superó el aforo. Esta segunda edición, denominada <strong>Vol. 2</strong>, espera reunir entre 2.000 y 2.500 personas en un ambiente de expresión artística, convivencia y turismo responsable.</p>
   </section>
+
   <section>
     <h2>Artistas invitados</h2>
     <p>Los artistas de esta edición serán anunciados próximamente. En la primera edición participaron artistas como <strong>Bigg Danny</strong>, <strong>Valenci JR</strong>, <strong>Rey Preciado</strong>, <strong>DJ España</strong> y <strong>Kraly</strong>.</p>
@@ -124,23 +133,28 @@
       <img src="img/flyer-anterior.jpg" alt="Flyer Island Party Anterior">
     </div>
   </section>
+
   <section>
     <h2>Información del lugar</h2>
     <p>Esta edición se llevará a cabo en el <strong>Coliseo del Pueblo de Tumaco</strong>, el 28 de junio de 2025, desde las <strong>9:00 p.m.</strong></p>
   </section>
+
   <section>
     <h2>Patrocinadores</h2>
     <p><strong>Patrocinador principal:</strong> Aguardiente Nariño</p>
     <img src="img/aguardiente-narino.jpg" alt="Logo Aguardiente Nariño" class="sponsors">
     <p><strong>Patrocinador secundario:</strong> Compraventa Capullo</p>
   </section>
+
   <section>
     <h2>Redes sociales</h2>
     <p>Síguenos en Instagram: <a href="https://instagram.com/island_party_" target="_blank">@island_party_</a></p>
   </section>
+
   <footer>
     &copy; 2025 ISLAND PARTY | Todos los derechos reservados
   </footer>
+
   <script>
     const countdownEl = document.getElementById('countdown');
     const eventDate = new Date('June 28, 2025 21:00:00').getTime();
