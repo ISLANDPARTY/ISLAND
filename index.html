@@ -150,6 +150,36 @@
     <h2>Redes sociales</h2>
     <p>Síguenos en Instagram: <a href="https://instagram.com/island_party_" target="_blank">@island_party_</a></p>
   </section>
+  <section>
+  <h2>Galería</h2>
+  <div class="galeria">
+    <img src="img/foto1.jpg" alt="Island Party anterior">
+    <img src="img/foto2.jpg" alt="Artistas en escena">
+    <img src="img/foto3.jpg" alt="Público disfrutando">
+  </div>
+  </section>
+  
+  <style>
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+  
+    .galeria img {
+      width: 300px;
+      max-width: 100%;
+      border: 3px solid var(--color-primario);
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+      transition: transform 0.3s;
+    }
+  
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+  </style>
 
   <footer>
     &copy; 2025 ISLAND PARTY | Todos los derechos reservados
