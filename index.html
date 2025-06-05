@@ -102,11 +102,41 @@
       }
     }
   </style>
+
+  <!-- NUEVO ESTILO para la sección de MAPA -->
+  <style>
+    .mapa-evento {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .imagenes-mapa {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 1rem;
+    }
+
+    .imagenes-mapa img {
+      width: 300px;
+      max-width: 100%;
+      border: 3px solid var(--color-secundario);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+
+    .imagenes-mapa img:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
+
 <body>
   <header>
     <h1>ISLAND PARTY VOL.2</h1>
-    <p>Coliseo del Pueblo, Tumaco, Nariño - 27 de junio - 9:00 PM</p>
+    <p>Coliseo del Pueblo, Tumaco, Nariño - 28 de junio - 9:00 PM</p>
   </header>
 
   <div class="logo-evento">
@@ -121,6 +151,15 @@
   <section>
     <div class="countdown" id="countdown"></div>
     <a href="https://wa.me/573187235419" target="_blank" class="reserva-btn">¡Reserva Ahora por WhatsApp!</a>
+
+    <!-- NUEVA SECCIÓN DEL MAPA -->
+    <section class="mapa-evento">
+      <h2>Mapa del evento</h2>
+      <div class="imagenes-mapa">
+        <img src="img/mapa1.jpg" alt="Mapa general del evento">
+        <img src="img/mapa2.jpg" alt="Distribución interna del evento">
+      </div>
+    </section>
 
     <h2>Sobre el evento</h2>
     <p>ISLAND PARTY es una celebración semestral de música, cultura y juventud en Tumaco. Su primera edición fue en diciembre de 2024 con una asistencia que superó el aforo. Esta segunda edición, denominada <strong>Vol. 2</strong>, espera reunir entre 2.000 y 2.500 personas en un ambiente de expresión artística, convivencia y turismo responsable.</p>
@@ -152,15 +191,16 @@
     <h2>Redes sociales</h2>
     <p>Síguenos en Instagram: <a href="https://instagram.com/island_party_" target="_blank">@island_party_</a></p>
   </section>
+
   <section>
-  <h2>Galería</h2>
-  <div class="galeria">
-    <img src="img/galeria1.jpeg" alt="Island Party anterior">
-    <img src="img/galeria2.jpeg" alt="Artistas en escena">
-    <img src="img/galeria4.jpeg" alt="Público disfrutando">
-  </div>
+    <h2>Galería</h2>
+    <div class="galeria">
+      <img src="img/galeria1.jpeg" alt="Island Party anterior">
+      <img src="img/galeria2.jpeg" alt="Artistas en escena">
+      <img src="img/galeria4.jpeg" alt="Público disfrutando">
+    </div>
   </section>
-  
+
   <style>
     .galeria {
       display: flex;
@@ -168,16 +208,16 @@
       gap: 10px;
       justify-content: center;
     }
-  
+
     .galeria img {
       width: 300px;
       max-width: 100%;
-      border: 3px -var(--color-primario);
+      border: 3px solid var(--color-primario);
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.4);
       transition: transform 0.3s;
     }
-  
+
     .galeria img:hover {
       transform: scale(1.05);
     }
